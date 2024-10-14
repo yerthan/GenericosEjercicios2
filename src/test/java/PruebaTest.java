@@ -30,6 +30,8 @@ public class PruebaTest {
    public void testRestar(){
       Operacion o = new Operacion(25);
       assertEquals(Integer.valueOf(20), o.restar(5));
+      Operacion o2 = new Operacion(25);
+      assertEquals(Integer.valueOf(25), o.restar(0));
    }
 
 }
