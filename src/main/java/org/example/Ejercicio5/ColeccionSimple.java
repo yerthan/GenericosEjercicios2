@@ -24,11 +24,8 @@ public class ColeccionSimple<T> implements ColeccionSimpleGenerica{
         Object c = null ;
         if(lista.isEmpty()){
             System.out.println("Lista vacia");
-        }else{
-            return c =  lista.get(0);
         }
-
-        return c;
+            return c =  lista.remove(0);
 
     }
 
@@ -43,12 +40,14 @@ public class ColeccionSimple<T> implements ColeccionSimpleGenerica{
 
     @Override
     public void anadirElemento(Object elemento) {
-
         T t = (T)elemento;
         lista.add(t);
-
-
     }
 
-
+    @Override
+    public String toString() {
+        return "ColeccionSimple{" +
+                "lista=" + lista +
+                '}';
+    }
 }

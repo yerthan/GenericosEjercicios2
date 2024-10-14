@@ -1,0 +1,21 @@
+package org.example.Ejercicio6;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class listaOrdenada<E extends Comparable<E>> {
+
+    private ArrayList<E> lista;
+
+    public listaOrdenada() {
+        this.lista = new ArrayList<>();
+    }
+
+    //This function will add an element, and letter
+    //sort the list
+    public void anaidir(E element){
+            lista.add(element);
+            Collections.sort(lista);
+    }
+
+}
