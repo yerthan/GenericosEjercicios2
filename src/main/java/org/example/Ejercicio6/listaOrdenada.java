@@ -1,6 +1,7 @@
 package org.example.Ejercicio6;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 public class listaOrdenada<E extends Comparable<E>> {
@@ -57,6 +58,17 @@ public class listaOrdenada<E extends Comparable<E>> {
             lista.remove(o);
             return true;
         }
+    }
+
+    //will return the place in the list if exists
+
+    public int indexOf(E o){
+        return lista.indexOf(o);
+    }
+
+    @Override
+    public String toString(){
+        return Arrays.toString(lista.toArray());
     }
 
 }
