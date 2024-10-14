@@ -37,7 +37,7 @@ public class Operacion implements Operable{
     public Object dividir(Object objeto) {
         Integer o = Integer.parseInt(objeto.toString());
         if(o == valor){
-            System.out.println("El valor es 0, porque se divide por si mismo");
+            System.out.println("El valor es 1, porque se divide por si mismo");
         }
         return valor / o;
     }
