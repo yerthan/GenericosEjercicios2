@@ -18,4 +18,15 @@ public class listaOrdenada<E extends Comparable<E>> {
             Collections.sort(lista);
     }
 
+
+    //This function will search the element
+    public E get(E elemnt){
+        int index = lista.indexOf(elemnt);
+        if(index == -1){
+            System.out.println("No se ha encontrado el elemento");
+            return null;
+        }
+        return lista.get(index);
+    }
+
 }
