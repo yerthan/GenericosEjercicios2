@@ -39,8 +39,24 @@ public class listaOrdenada<E extends Comparable<E>> {
         return lista.isEmpty();
     }
 
+
+    //This function will retun a boolean if the element can remove from the list and a true
+    //if not will return a false
     public boolean remove(E o){
 
+        if(lista.isEmpty()){
+            System.out.println("la lista esta vacia");
+            return false;
+        }
+
+        if(!lista.contains(o)){
+            System.out.println("El elemento no existe");
+            return false;
+        }else {
+            System.out.println("El elemento si esta en la lista");
+            lista.remove(o);
+            return true;
+        }
     }
 
 }
