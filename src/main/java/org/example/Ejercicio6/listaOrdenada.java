@@ -29,4 +29,18 @@ public class listaOrdenada<E extends Comparable<E>> {
         return lista.get(index);
     }
 
+    //This function will return the size of the collection
+    public int size(){
+        return lista.size();
+    }
+
+    //this function will return true or false if the collection is empty
+    public boolean isEmpty(){
+        return lista.isEmpty();
+    }
+
+    public boolean remove(E o){
+
+    }
+
 }
